@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar1 {
+  background-color: #fac769;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  padding: 30px;
+  width: 100%;
+  z-index: 1000;
+  top: -300px;
+  transition: top 0.5s ease-in-out;
+}
+
+.navbar1 > ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar1 li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.navbar1 li a {
+  color: black;
+  font-weight: light;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(155, 145, 145);
+}
+
+.navbar1 li a:hover {
+  color: rgb(155, 145, 145);
+}
+
+#checkbox1 {
+  display: none;
+}
+
+#checkbox1:checked ~ .navbar1 {
+  top: 0px;
+}
+
+.hamburger1 {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.3rem;
+  height: 50px;
+  width: 46px;
+}
+
+.hamburger1 > span {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(123, 116, 116);
+  margin: 0.2rem 0px;
+  height: 4px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#checkbox1:checked ~ .hamburger1 > span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#checkbox1:checked ~ .hamburger1 > span:nth-child(2) {
+  display: none;
+}
+
+#checkbox1:checked ~ .hamburger1 > span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* bg image Section */
+.bg_image {
+  background-image: url(./image/head.png.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.a-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  width: 80%;
+}
+
+.col_md > small {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.col_md > h1 {
+  font-size: 3rem;
+  font-weight: 10rem;
+  width: 70%;
+}
+
+.col_md > button {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  width: 160px;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.col_md > button:hover {
+  background-color: rgb(194, 184, 184);
+}
+
+/* Section 2 */
+.p1 {
+  padding-left: 14%;
+  margin-top: 5%;
+  font-size: 35px;
+}
+
+.p2 {
+  margin-top: 15px;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+
+.p2 a {
+  text-decoration: none;
+}
+
+.section-3 h3 {
+  background-color: #fac769;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+/*  Hottest Hedphones    */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.p3 {
+  padding-left: 18%;
+  font-size: 35px;
+  margin-bottom: 7px;
+  margin-top: 40px;
+}
+
+.btn-2 {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 40px;
+  border: none;
+  padding: 12px;
+  background-color: #fac769;
+}
+
+.head-1 {
+  background-color: #fac769;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+.head-1 h3 {
+  padding-left: 20px;
+  font-size: medium;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.head-1 p {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  margin-top: -4px;
+}
+
+.card-1 {
+  width: 20%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/*  New Hedphones   */
+
+.p4 {
+  padding-left: 17.5%;
+  font-size: 35px;
+  margin-bottom: 7px;
+  margin-top: 15px;
+  margin-bottom: -300px;
+}
+
+.main_class {
+  display: grid;
+  grid-template-areas:
+    "card-1 card-2 card-3 card-4"
+    "card-5 card-6 card-7 card-8";
+  gap: 5px;
+  padding: 17%;
+  padding-bottom: 100px;
+}
+
+.image1 {
+  background-image: url(./image/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 27vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box1 {
+  grid-area: card-1;
+}
+
+#box2 {
+  grid-area: card-2;
+}
+
+#box3 {
+  grid-area: card-3;
+}
+
+#box4 {
+  grid-area: card-4;
+}
+
+#box5 {
+  grid-area: card-5;
+}
+
+#box6 {
+  grid-area: card-6;
+}
+
+#box7 {
+  grid-area: card-7;
+}
+
+#box8 {
+  grid-area: card-8;
+}
+
+/* Footer */
+
+.foter {
+  background-color: #fac769;
+  margin-bottom: 70px;
+  padding: 30px;
+}
+
+.p5 {
+  margin-left: 20%;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.p6 {
+  margin-left: 20%;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.inner_foot {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner_foot > button {
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  width: 100px;
+  margin-left: 10%;
+}
+
+.inner_foot > button:hover {
+  background-color: gray;
+}
+
+/* New Bar */
+
+.p7 {
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main_cont3 {
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: -50%;
+}
+
+.feature {
+  margin: 0 -30px;
+}
+
+.numbr {
+  color: #fac769;
+  font-weight: bolder;
+  font-size: 69px;
+  padding: 0 70px;
+}
+
+.feature > h3 {
+  position: absolute;
+  margin-top: -45px;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 0 70px;
+}
+
+.feature > p {
+  color: grey;
+  margin-right: -50px;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-top: -2px;
+  margin-bottom: -1px;
+}
+
+.feature > a {
+  text-decoration: none;
+  color: #fac769;
+  padding: 0 70px;
+}
+
+/* Map */
+.map {
+  padding-top: 50px;
+}
+
+.map h4 {
+  text-align: center;
+  color: grey;
+}
+
+.map h1 {
+  text-align: center;
+  margin-top: -10px;
+}
+
+/* Footer 2 */
+
+.Footer_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.Footer_section > p {
+  margin: 17px 200px;
+  text-align: center;
+  color: grey;
+}
+
+.fa {
+  text-decoration: none;
+  margin: 15px 8px;
+  color: white;
+  background-color: #fac769;
+  text-align: center;
+  width: 34px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
